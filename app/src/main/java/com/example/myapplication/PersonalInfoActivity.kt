@@ -178,7 +178,7 @@ fun PersonalInfoScreen() {
                     label = stringResource(R.string.year_label),
                     value = stringResource(R.string.year_value)
                 )
-                Spacer(modifier = Modifier.height(200.dp))
+                Spacer(modifier = Modifier.height(100.dp))
 
                 Image(
                     painter = painterResource(id = R.drawable.tamanghasset_logo),
