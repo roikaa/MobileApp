@@ -1,0 +1,29 @@
+
+    <resources>
+        <string name="app_name">My Application</string> <!-- Keep existing -->
+
+        <!-- Add these new strings -->
+        <string name="login_title">Welcome</string>
+        <string name="username_hint">Username</string>
+        <string name="password_hint">Password</string>
+        <string name="connect_button">Connect</string>
+        <string name="fields_required">Please fill all fields</string>
+        <string name="personal_info_title">Personal Information</string>
+        <string name="name_label">Name:</string>
+        <string name="dob_label">Date of Birth:</string>
+        <string name="university_label">University:</string>
+        <string name="specialty_label">Specialty:</string>
+        <string name="year_label">Year:</string>
+
+        <!-- Your personal information -->
+        <string name="name_value">Alaa</string>
+        <string name="dob_value">09/12</string>
+        <string name="university_value">Tamanghasset University</string>
+        <string name="specialty_value">fullstack developer</string>
+        <string name="year_value">3ed year</string>
+
+        <string name="university_logo">tamanghasset_logo</string>
+        <string name="lang_english">English</string>
+        <string name="lang_french">Français</string>
+        <string name="lang_arabic">arabic</string>
+    </resources>
