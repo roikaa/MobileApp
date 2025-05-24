@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import java.util.*
 import android.content.res.Configuration
+import androidx.compose.ui.input.pointer.motionEventSpy
 
 class PersonalInfoActivity : ComponentActivity() {
     private var mediaPlayer: MediaPlayer? = null
@@ -112,6 +113,8 @@ fun PersonalInfoScreen() {
         Image(
             painter = painterResource(id = R.drawable.tamanghasset_logo),
             contentDescription = stringResource(R.string.university_logo),
+            modifier = Modifier.height(32.dp),
+            alignment = Alignment.Center
 
         )
 
@@ -127,16 +130,16 @@ fun PersonalInfoScreen() {
             modifier = Modifier.fillMaxWidth()
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(1.dp))
 
         // Personal Information Card
         Card(
             modifier = Modifier.fillMaxWidth(),
-            elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 30.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
         ) {
             Column(
-                modifier = Modifier.padding(20.dp)
+                modifier = Modifier.padding(50.dp)
             ) {
                 // Name
                 PersonalInfoItem(
@@ -175,6 +178,16 @@ fun PersonalInfoScreen() {
                     label = stringResource(R.string.year_label),
                     value = stringResource(R.string.year_value)
                 )
+                Spacer(modifier = Modifier.height(200.dp))
+
+                Image(
+                    painter = painterResource(id = R.drawable.tamanghasset_logo),
+                    contentDescription = stringResource(R.string.university_logo),
+                    modifier = Modifier.fillMaxSize(),
+                    alignment = Alignment.Center
+
+                )
+
             }
         }
     }
